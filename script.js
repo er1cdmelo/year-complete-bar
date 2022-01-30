@@ -7,7 +7,7 @@ for(c = 1; c < yeardays; c++){
 
 var now = new Date
 
-let diadasemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'][now.getDay()]
+let diadasemana = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()]
 
 
 
@@ -22,7 +22,7 @@ let diadasemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', '
 
 let dia = now.getDate();
 
-let mes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'][now.getMonth()]
+let mes = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][now.getMonth()]
 
 
 
@@ -58,14 +58,9 @@ let datatexto = document.getElementById('data-texto');
 
 let fullBar = document.getElementById('full-bar');
 
-datatexto.innerHTML = `Hoje é ${diadasemana}, ${dia} de ${mes} de ${ano}`;
+datatexto.innerHTML = `Today is ${diadasemana}, ${mes} ${dia}, ${ano}`;
 
 
 fullBar.style.width = porcentagem;
-document.getElementById('perce').innerHTML = porcentagem
-
-
-
-
-
-
+document.getElementById('perce').innerHTML = porcentagem;
+document.getElementById('title').innerHTML = '2022 is ' + porcentagem

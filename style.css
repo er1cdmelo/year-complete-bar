@@ -80,6 +80,15 @@ footer{
   align-items: flex-end;
 }
 
+a, a:active{
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+a:hover{
+  color: #5c5b5b;
+}
+
 @media (max-width:600px){
   .data h2{
   font-size: 4vmin;

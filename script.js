@@ -26,7 +26,7 @@ let mes = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augu
 
 
 
-var mesescolhido = 1;
+var mesescolhido = now.getMonth();
 let mesnumero;
 let mesesDia = [31,59,90,120,151,181,212,243,273,304,334,365];
 
@@ -37,12 +37,12 @@ if(mesescolhido < 1){
 
 
 
-console.log(mesnumero);
+console.log('mesnumero> ' + mesnumero);
 
 let somabraba = mesnumero + dia;
-
+console.log('somabraba> ' + somabraba)
 let calcporcentagem = (somabraba*100)/yeardays;
-
+console.log('yeardays> ' + yeardays)
 console.log(somabraba);
 console.log(calcporcentagem.toFixed(2) + '%');
 

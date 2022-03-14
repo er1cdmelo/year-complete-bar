@@ -39,11 +39,11 @@ if(mesescolhido < 1){
 
 console.log('mesnumero> ' + mesnumero);
 
-let somabraba = mesnumero + dia;
-console.log('somabraba> ' + somabraba)
-let calcporcentagem = (somabraba*100)/yeardays;
+let somatotal = mesnumero + dia;
+console.log('soma total> ' + somatotal)
+let calcporcentagem = (somatotal*100)/yeardays;
 console.log('yeardays> ' + yeardays)
-console.log(somabraba);
+console.log(somatotal);
 console.log(calcporcentagem.toFixed(2) + '%');
 
 let porcentagem = calcporcentagem.toFixed(2) + '%';
